@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentAt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtletaFragment">
+
+    <EditText
+        android:id="@+id/etNomeAt"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/etDataNascAt"
+        app:layout_constraintEnd_toEndOf="@+id/etDataNascAt"
+        app:layout_constraintStart_toStartOf="@+id/etDataNascAt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataNascAt"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:hint="@string/data_nasc"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/etBairroAt"
+        app:layout_constraintEnd_toEndOf="@+id/etBairroAt"
+        app:layout_constraintStart_toStartOf="@+id/etBairroAt"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAt" />
+
+    <EditText
+        android:id="@+id/etBairroAt"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="@string/bairro"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/etAcademiaAt"
+        app:layout_constraintEnd_toEndOf="@+id/etAcademiaAt"
+        app:layout_constraintStart_toStartOf="@+id/etAcademiaAt"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascAt" />
+
+    <EditText
+        android:id="@+id/etRecordePessoalAt"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="@string/recordePessoal"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarAt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAcademiaAt" />
+
+    <EditText
+        android:id="@+id/etAcademiaAt"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="@string/academia"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/etRecordePessoalAt"
+        app:layout_constraintEnd_toEndOf="@+id/etRecordePessoalAt"
+        app:layout_constraintStart_toStartOf="@+id/etRecordePessoalAt"
+        app:layout_constraintTop_toBottomOf="@+id/etBairroAt" />
+
+    <Button
+        android:id="@+id/btnCadastrarAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="98dp"
+        android:text="@string/cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRecordePessoalAt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

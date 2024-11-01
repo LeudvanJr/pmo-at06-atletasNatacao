@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemAtletaJovem"
+        android:title="@string/atleta_jovem" />
+    <item
+        android:id="@+id/itemAtletaSenior"
+        android:title="@string/atleta_senior" />
+    <item
+        android:id="@+id/itemAtleta"
+        android:title="@string/atleta" />
+</menu>
